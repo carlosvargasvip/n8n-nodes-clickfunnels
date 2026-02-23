@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-clickfunnels",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "n8n community node for ClickFunnels 2.0 API - manage contacts, orders, products, courses, funnels, and more",
 	"keywords": [
 		"n8n-community-node-package",
