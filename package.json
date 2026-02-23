@@ -1,0 +1,65 @@
+{
+	"name": "n8n-nodes-clickfunnels",
+	"version": "0.1.0",
+	"description": "n8n community node for ClickFunnels 2.0 API - manage contacts, orders, products, courses, funnels, and more",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"n8n-node",
+		"clickfunnels",
+		"clickfunnels2",
+		"marketing",
+		"funnels",
+		"sales",
+		"automation",
+		"crm",
+		"contacts",
+		"orders",
+		"products"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/carlosvargasvip/n8n-nodes-clickfunnels",
+	"author": {
+		"name": "carlosvargasvip",
+		"url": "https://github.com/carlosvargasvip"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/carlosvargasvip/n8n-nodes-clickfunnels.git"
+	},
+	"bugs": {
+		"url": "https://github.com/carlosvargasvip/n8n-nodes-clickfunnels/issues"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc && node scripts/copy-icons.js",
+		"dev": "tsc --watch",
+		"format": "prettier nodes credentials --write",
+		"lint": "eslint nodes credentials package.json",
+		"lintfix": "eslint nodes credentials package.json --fix",
+		"prepublishOnly": "npm run build"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/ClickFunnelsApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ClickFunnels/ClickFunnels.node.js"
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.0",
+		"n8n-workflow": "^2.8.0",
+		"typescript": "~5.3.0"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

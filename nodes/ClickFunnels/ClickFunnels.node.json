@@ -1,0 +1,22 @@
+{
+	"node": "n8n-nodes-base.clickFunnels",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Growth", "Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://developers.myclickfunnels.com/reference/introduction"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://developers.myclickfunnels.com/reference/introduction"
+			}
+		]
+	},
+	"alias": ["funnel", "sales", "marketing", "landing page", "CF"],
+	"subcategories": {
+		"Marketing & Growth": ["Content & Files"]
+	}
+}
